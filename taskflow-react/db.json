@@ -1,0 +1,170 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "nom": "Shammah Ndjibu",
+      "email": "shammah@primetek.cd",
+      "motDePasse": "1234"
+    }
+  ],
+  "projets": [
+    {
+      "id": 1,
+      "utilisateurId": 1,
+      "nom": "Site vitrine",
+      "description": "Création d'un site vitrine moderne.",
+      "couleur": "#21C7A5",
+      "creeLe": "2026-09-01"
+    },
+    {
+      "id": 2,
+      "utilisateurId": 1,
+      "nom": "Application mobile",
+      "description": "Développement d'une application mobile.",
+      "couleur": "#6366F1",
+      "creeLe": "2026-09-02"
+    },
+    {
+      "id": 3,
+      "utilisateurId": 1,
+      "nom": "Portfolio",
+      "description": "Création de mon portfolio personnel.",
+      "couleur": "#F59E0B",
+      "creeLe": "2026-09-03"
+    }
+  ],
+  "taches": [
+    {
+      "id": 1,
+      "projetId": 1,
+      "titre": "Créer la page accueil",
+      "description": "Créer la structure de la page d'accueil.",
+      "statut": "terminee",
+      "priorite": "haute",
+      "echeance": "2026-09-08",
+      "creeLe": "2026-09-01",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 2,
+      "projetId": 1,
+      "titre": "Créer le menu",
+      "description": "Créer la navigation principale.",
+      "statut": "en_cours",
+      "priorite": "moyenne",
+      "echeance": "2026-09-09",
+      "creeLe": "2026-09-02",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 3,
+      "projetId": 1,
+      "titre": "Formulaire de contact",
+      "description": "Créer et valider le formulaire.",
+      "statut": "a_faire",
+      "priorite": "haute",
+      "echeance": "2026-09-10",
+      "creeLe": "2026-09-03",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 4,
+      "projetId": 1,
+      "titre": "Responsive design",
+      "description": "Adapter le site au téléphone.",
+      "statut": "a_faire",
+      "priorite": "moyenne",
+      "echeance": "2026-09-11",
+      "creeLe": "2026-09-04",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 5,
+      "projetId": 2,
+      "titre": "Créer les écrans",
+      "description": "Créer les différentes interfaces.",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "echeance": "2026-09-08",
+      "creeLe": "2026-09-02",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 6,
+      "projetId": 2,
+      "titre": "Créer la navigation",
+      "description": "Mettre en place la navigation.",
+      "statut": "a_faire",
+      "priorite": "moyenne",
+      "echeance": "2026-09-10",
+      "creeLe": "2026-09-03",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 7,
+      "projetId": 2,
+      "titre": "Tester les formulaires",
+      "description": "Tester les formulaires de l'application.",
+      "statut": "a_faire",
+      "priorite": "basse",
+      "echeance": "2026-09-12",
+      "creeLe": "2026-09-04",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 8,
+      "projetId": 2,
+      "titre": "Corriger les erreurs",
+      "description": "Corriger les problèmes détectés.",
+      "statut": "terminee",
+      "priorite": "haute",
+      "echeance": "2026-09-07",
+      "creeLe": "2026-09-02",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 9,
+      "projetId": 3,
+      "titre": "Créer le profil",
+      "description": "Créer la présentation personnelle.",
+      "statut": "terminee",
+      "priorite": "haute",
+      "echeance": "2026-09-07",
+      "creeLe": "2026-09-01",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 10,
+      "projetId": 3,
+      "titre": "Ajouter mes compétences",
+      "description": "Présenter mes compétences techniques.",
+      "statut": "en_cours",
+      "priorite": "moyenne",
+      "echeance": "2026-09-09",
+      "creeLe": "2026-09-03",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 11,
+      "projetId": 3,
+      "titre": "Ajouter mes projets",
+      "description": "Présenter mes réalisations.",
+      "statut": "a_faire",
+      "priorite": "haute",
+      "echeance": "2026-09-11",
+      "creeLe": "2026-09-04",
+      "modifieLe": "2026-09-04"
+    },
+    {
+      "id": 12,
+      "projetId": 3,
+      "titre": "Publier le portfolio",
+      "description": "Mettre le portfolio en ligne.",
+      "statut": "a_faire",
+      "priorite": "moyenne",
+      "echeance": "2026-09-13",
+      "creeLe": "2026-09-04",
+      "modifieLe": "2026-09-04"
+    }
+  ]
+}
