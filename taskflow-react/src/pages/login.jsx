@@ -5,21 +5,38 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
-    const user = {
-      email: email,
-      password: password,
-    };
+    setError("");
 
-    login(user);
+    try {
+      const response = await fetch(
+        `http://localhost:3000/utilisateurs?email=${encodeURIComponent(
+          email
+        )}&motDePasse=${encodeURIComponent(password)}`
+      );
 
-    navigate("/dashboard");
+      const utilisateurs = await response.json();
+
+      if (utilisateurs.length === 0) {
+        setError("Email ou mot de passe incorrect.");
+        return;
+      }
+
+      const utilisateur = utilisateurs[0];
+
+      login(utilisateur);
+
+      navigate("/dashboard");
+    } catch (error) {
+      setError("Impossible de contacter le serveur.");
+    }
   }
 
   return (
@@ -58,6 +75,8 @@ function Login() {
         </div>
 
         <br />
+
+        {error && <p>{error}</p>}
 
         <button type="submit">
           Se connecter
